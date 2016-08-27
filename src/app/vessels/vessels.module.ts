@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import {VesselsListComponent} from "./vessels-list";
 import {VesselsDetailComponent} from "./vessels-detail";
 import {VesselsComponent} from "./vessels.component";
+import {VesselsService} from "./vessels.service";
 
 @NgModule({
   declarations: [
@@ -15,14 +16,11 @@ import {VesselsComponent} from "./vessels.component";
   imports: [
     CommonModule,
     FormsModule,
-    BrowserModule
   ],
   exports:[
     VesselsComponent
   ],
-  providers: [],
-  entryComponents: [],
-  bootstrap: []
+  providers: [ VesselsService ]
 })
 export class VesselsModule {
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {VesselsService} from "./vessels/vessels.service";
 
 @Component({
   selector: 'app-root',

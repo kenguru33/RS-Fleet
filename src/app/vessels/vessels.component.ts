@@ -1,4 +1,5 @@
 import {Component, OnInit, Input, OnChanges, SimpleChanges} from '@angular/core';
+import {VesselsService} from "./vessels.service";
 
 @Component({
   selector: 'rs-vessels',
